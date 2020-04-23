@@ -31,7 +31,27 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      bottomNavigationBar: b,
+      bottomNavigationBar: BottomNavigationBar(
+        currentIndex: 0, // this will be set when a new tab is tapped
+        items: [
+          BottomNavigationBarItem(
+            title: new Text('StateWise',style: TextStyle(
+              color:Color.fromRGBO(0, 165, 82,100)
+            ),),
+            icon: new Icon(Icons.home,color:Color.fromRGBO(0, 165, 82,100) ,),
+
+          ),
+          BottomNavigationBarItem(
+            title: new Text('DistrictWise'),
+              icon: new Icon(Icons.storage)
+          ),
+          BottomNavigationBarItem(
+              title: Text('FAQ'),
+            icon: new Icon(Icons.more),
+          )
+        ],
+      ),
+
       body: Center(
         child: res!=null ?
         ListView.builder(
