@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:covidtracker/district.dart';
 import 'package:covidtracker/faq.dart';
 import 'package:covidtracker/home.dart';
 import 'package:flutter/cupertino.dart';
@@ -19,7 +20,7 @@ class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
   final List<Widget> _children = [
     Home(),
-    Container(),
+    District(),
     Faq(),
   ];
 
