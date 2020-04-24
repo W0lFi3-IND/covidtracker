@@ -21,7 +21,7 @@ class _LandingPageState extends State<LandingPage> {
             CircleAvatar(backgroundImage:AssetImage('assets/images/mask.jpg'),radius: 100,)
             ,Padding(
               padding: const EdgeInsets.only(top:25.0),
-              child: Text("You have only one job to do don't ruin it",style: TextStyle(
+              child: Text("You have only one job to do.Don't ruin it",style: TextStyle(
                 fontSize: 18,
                 color: Color.fromRGBO(0, 165, 82,100),
                 fontWeight: FontWeight.w600
